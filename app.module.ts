@@ -13,8 +13,10 @@ import { BirdsComponent } from './birds.component';
 import { AnimalsComponent } from './animals.component';
 import { HomeComponent } from './home.component';
 
-import {TempConvertPipe} from './convert.pipe';
-import {MyDirective} from './demo.directive';
+import { TempConvertPipe } from './convert.pipe';
+import { MyDirective } from './demo.directive';
+import { WeightTransformPipe } from './weights.pipe';
+import { CreditCardPipe } from './creditcard.pipe';
 
 import { PeopleData } from './people.service';
 import { PostsService } from './posts.service';
@@ -30,7 +32,9 @@ import { PostsService } from './posts.service';
     BorderClassComponent,
     BirdsComponent,
     AnimalsComponent,
-    HomeComponent
+    HomeComponent,
+    WeightTransformPipe,
+    CreditCardPipe
   ],
   imports: [
     BrowserModule,

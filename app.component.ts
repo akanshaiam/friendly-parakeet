@@ -7,6 +7,14 @@ import { Posts } from './posts.model';
   selector: 'app-root',
   template: `<div><h1>{{title}}</h1>
     <p>{{ 98.6 | TempConvert : 'C'}}</p>
+    <hr><br>
+    <h3>Weight Convert Pipe Demo</h3>
+    <p>{{ 25 | weightTransform : 'kg'}}</p>
+    <br><hr>
+    <hr><br>
+    <h3>Credit Card Type Pipe Demo</h3>
+    <p>{{ '5655764236542345' | cardPipe}}</p>
+    <br><hr>
     <random-quote></random-quote>
     <hr/>
     <counter-comp [counter]="counterVal" (counterChanged)="handleCounterEvent($event)"></counter-comp>
